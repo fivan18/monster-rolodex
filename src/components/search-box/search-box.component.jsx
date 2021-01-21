@@ -1,9 +1,14 @@
 import React from 'react';
 
-export const SearchBox = () => {
+import './search-box.styles.css';
+
+export const SearchBox = props => {
     return (
-        <div>
-            SearchBox
-        </div>
+        <input
+            className="search-box"
+            type="search"
+            placeholder="search monsters"
+            onChange={props.onSearchChange}
+         />
     );
 }
