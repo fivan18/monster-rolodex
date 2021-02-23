@@ -6,7 +6,7 @@
     <img src="image.png">
 </p>
 
-This project consisted on building a monster search using [create-react-app](https://create-react-app.dev/), a tool built by developers at Facebook to help you build React applications, saving you from time-consuming setup and configuration. For learning porpuses.
+This project consisted on building a monster search using [create-react-app](https://create-react-app.dev/). This project was built for learning porpuses to understand the fundamentals of [React](https://reactjs.org/) library.
 
 ## Built With
 
@@ -51,7 +51,7 @@ This project doesn't count with test.
 
 ### Deployment
 
-To deploy this project on heroku follow the next [instructions](https://github.com/mars/create-react-app-buildpack).
+This project was deployed with [GitHub Pages](https://pages.github.com/). Follow [this](https://create-react-app.dev/docs/deployment#github-pages) instructions to deploy the app.
 
 
 ## Authors
@@ -67,12 +67,8 @@ To deploy this project on heroku follow the next [instructions](https://github.c
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/fivan18/calculator-react/issues).
+Feel free to check the [issues page](https://github.com/fivan18/monster-rolodex/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## License
-
-This project is [MIT](LICENSE) licensed.

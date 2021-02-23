@@ -1,15 +1,25 @@
 import React from 'react';
 
-import { Card } from '../card/card.component';
+import PropTypes from 'prop-types';
 
-import './card-list.styles.css'
+import Card from '../card/card.component';
 
-export const CardList = props => {
-    return (
-        <div className='card-list'>
-        {props.monsters.map(monster => (
-          <Card key={monster.id} monster={monster} />
-        ))}
-      </div>
-    );
-}
+import './card-list.styles.css';
+
+const CardList = ({ monsters }) => (
+  <div className="card-list">
+    {monsters.map(monster => (
+      <Card key={monster.id} monster={monster} />
+    ))}
+  </div>
+);
+
+CardList.propTypes = {
+  monsters: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+    }),
+  ).isRequired,
+};
+
+export default CardList;

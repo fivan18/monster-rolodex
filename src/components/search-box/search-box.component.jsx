@@ -1,14 +1,20 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import './search-box.styles.css';
 
-export const SearchBox = props => {
-    return (
-        <input
-            className="search-box"
-            type="search"
-            placeholder="search monsters"
-            onChange={props.onSearchChange}
-         />
-    );
-}
+const SearchBox = ({ onSearchChange }) => (
+  <input
+    className="search-box"
+    type="search"
+    placeholder="search monsters"
+    onChange={onSearchChange}
+  />
+);
+
+SearchBox.propTypes = {
+  onSearchChange: PropTypes.func.isRequired,
+};
+
+export default SearchBox;
